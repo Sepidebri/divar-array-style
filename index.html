@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javascript</title>
+    <style>
+      html {
+        direction: rtl;
+      }
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+      }
+      li {
+        list-style: none;
+      }
+      body {
+        margin: 0;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      .wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      #divar {
+        margin-top: 50px;
+      }
+      #divar ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 10px;
+        border-top: 1px solid #dddddd;
+        gap: 5px;
+      }
+      #divar ul li {
+        flex-basis: 33%;
+        display: flex;
+        border: 1px solid #dddddd;
+      }
+
+      #divar ul li img {
+        display: block;
+        width: 50%;
+        padding: 5px;
+        border-radius: 20px;
+      }
+      #divar ul li .divar-content {
+        width: 50%;
+        padding: 5px;
+      }
+      #divar ul li .divar-content .divar-price,
+      .divar-time,
+      .divar-place {
+        color: #585757;
+      }
+      #divar ul li .divar-content .divar-name {
+        margin-bottom: 20px;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="divar">
+        <ul></ul>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
